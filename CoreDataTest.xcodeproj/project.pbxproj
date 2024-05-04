@@ -13,6 +13,11 @@
 		A8A265002BE62F0E0030D119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8A264FF2BE62F0E0030D119 /* Base */; };
 		A8A265022BE62F100030D119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A265012BE62F100030D119 /* Assets.xcassets */; };
 		A8A265052BE62F100030D119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8A265042BE62F100030D119 /* Base */; };
+		A8A2650E2BE630870030D119 /* MyAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8A2650C2BE630870030D119 /* MyAppModel.xcdatamodeld */; };
+		A8A265182BE6320A0030D119 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A265172BE6320A0030D119 /* CoreDataService.swift */; };
+		A8A2651B2BE6363C0030D119 /* MyAppData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A265192BE6363C0030D119 /* MyAppData+CoreDataClass.swift */; };
+		A8A2651C2BE6363C0030D119 /* MyAppData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2651A2BE6363C0030D119 /* MyAppData+CoreDataProperties.swift */; };
+		A8A2651E2BE636670030D119 /* CoreDataService+MyAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2651D2BE636670030D119 /* CoreDataService+MyAppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A8A265012BE62F100030D119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8A265042BE62F100030D119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8A265062BE62F100030D119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A2650D2BE630870030D119 /* MyAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAppModel.xcdatamodel; sourceTree = "<group>"; };
+		A8A265172BE6320A0030D119 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		A8A265192BE6363C0030D119 /* MyAppData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyAppData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A8A2651A2BE6363C0030D119 /* MyAppData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyAppData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A8A2651D2BE636670030D119 /* CoreDataService+MyAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataService+MyAppData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,11 @@
 		A8A264EC2BE62F0E0030D119 = {
 			isa = PBXGroup;
 			children = (
+				A8A265192BE6363C0030D119 /* MyAppData+CoreDataClass.swift */,
+				A8A2651A2BE6363C0030D119 /* MyAppData+CoreDataProperties.swift */,
+				A8A2650C2BE630870030D119 /* MyAppModel.xcdatamodeld */,
+				A8A265172BE6320A0030D119 /* CoreDataService.swift */,
+				A8A2651D2BE636670030D119 /* CoreDataService+MyAppData.swift */,
 				A8A264F72BE62F0E0030D119 /* CoreDataTest */,
 				A8A264F62BE62F0E0030D119 /* Products */,
 			);
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A265182BE6320A0030D119 /* CoreDataService.swift in Sources */,
 				A8A264FD2BE62F0E0030D119 /* ViewController.swift in Sources */,
+				A8A2651E2BE636670030D119 /* CoreDataService+MyAppData.swift in Sources */,
+				A8A2651B2BE6363C0030D119 /* MyAppData+CoreDataClass.swift in Sources */,
+				A8A2651C2BE6363C0030D119 /* MyAppData+CoreDataProperties.swift in Sources */,
 				A8A264F92BE62F0E0030D119 /* AppDelegate.swift in Sources */,
 				A8A264FB2BE62F0E0030D119 /* SceneDelegate.swift in Sources */,
+				A8A2650E2BE630870030D119 /* MyAppModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +383,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8A2650C2BE630870030D119 /* MyAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8A2650D2BE630870030D119 /* MyAppModel.xcdatamodel */,
+			);
+			currentVersion = A8A2650D2BE630870030D119 /* MyAppModel.xcdatamodel */;
+			name = MyAppModel.xcdatamodeld;
+			path = /Users/aleksandrmoroshovskyi/Develop/CoreDataTest/MyAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A8A264ED2BE62F0E0030D119 /* Project object */;
 }
